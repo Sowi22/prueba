@@ -8,7 +8,7 @@
 .cases__head h2 { color: #fff; font-size: clamp(28px, 2vw + 18px, 46px); }
 .cases__head .accent { color: #dcdcdc; font-style: italic; }
 .cases__viewport { width: 100%; }
-.cases__track { display: flex; gap: 22px; padding: 0 max(24px, 5vw); width: max-content; will-change: transform; transform: translate3d(var(--cases-x, 0px), 0, 0); }
+.cases__track { display: flex; align-items: center; gap: 22px; padding: 0 max(24px, 5vw); width: max-content; will-change: transform; transform: translate3d(var(--cases-x, 0px), 0, 0); }
 .case-card {
   position: relative; flex: 0 0 auto; width: clamp(260px, 30vw, 440px); aspect-ratio: 622 / 545;
   border-radius: 20px; overflow: hidden; background: var(--dark-alt); margin: 0;
