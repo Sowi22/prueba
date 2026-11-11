@@ -8,8 +8,9 @@
 <link rel="icon" href="assets/logo/icon-dark.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..32,500;9..32,600;9..32,700&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..32,500;9..32,600;9..32,700&family=Instrument+Sans:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/sections.css">
 </head>
 <body>
 
@@ -163,6 +164,100 @@
   </div>
 </section>
 
+<!-- ÚLTIMOS CASOS: la sección se queda fija y las tarjetas se desplazan de lado al hacer scroll -->
+<section class="cases" id="casos" aria-label="Últimos casos">
+  <div class="cases__pin">
+    <div class="container cases__head">
+      <p class="eyebrow">Resultados reales</p>
+      <h2>Mira lo que hemos <span class="accent">logrado</span></h2>
+    </div>
+    <div class="cases__viewport">
+      <div class="cases__track" id="casesTrack">
+        <figure class="case-card">
+          <img src="assets/img/caso-1.jpg" alt="Antes y después de transferencia de grasa a glúteos" loading="lazy" width="622" height="545">
+          <figcaption>Contorno corporal</figcaption>
+        </figure>
+        <figure class="case-card">
+          <img src="assets/img/caso-2.jpg" alt="Antes y después de cirugía mamaria" loading="lazy" width="622" height="545">
+          <figcaption>Cirugía mamaria</figcaption>
+        </figure>
+        <figure class="case-card">
+          <img src="assets/img/caso-3.jpg" alt="Antes y después de abdominoplastia" loading="lazy" width="622" height="545">
+          <figcaption>Abdominoplastia</figcaption>
+        </figure>
+        <figure class="case-card">
+          <img src="assets/img/caso-4.jpg" alt="Antes y después de mamoplastia de aumento" loading="lazy" width="622" height="545">
+          <figcaption>Mamoplastia de aumento</figcaption>
+        </figure>
+        <a href="#contacto" class="case-card case-card--cta">
+          <span class="eyebrow">Tu caso podría ser el próximo</span>
+          <span class="case-card__big">Agenda tu valoración</span>
+          <span class="btn btn--primary">Quiero mi cita</span>
+        </a>
+      </div>
+    </div>
+    <div class="cases__progress" aria-hidden="true"><span id="casesBar"></span></div>
+  </div>
+</section>
+
+<!-- TURISMO MÉDICO -->
+<section class="tour" id="turismo-medico">
+  <div class="tour__bg" id="tourBg" aria-hidden="true"></div>
+  <div class="tour__shade" aria-hidden="true"></div>
+  <div class="container tour__inner">
+    <div class="tour__text">
+      <p class="eyebrow tour__eyebrow reveal">Turismo médico &middot; Barranquilla, Colombia</p>
+      <h2 class="reveal">Bienvenido al <span class="accent">Caribe</span></h2>
+      <p class="tour__lead reveal">Un destino que te recibe como en casa.</p>
+      <p class="reveal">Barranquilla es una ciudad vibrante, cálida y llena de vida. Su gente, su cultura y su clima te harán sentir acompañado durante toda tu experiencia.</p>
+      <p class="reveal"><strong>Tu recuperación, tu aventura.</strong> Desde el mar Caribe hasta su gastronomía y cultura, Barranquilla ofrece todo lo que necesitas para una recuperación tranquila y una experiencia inolvidable.</p>
+      <a href="#contacto" class="btn btn--primary reveal">Planear mi viaje</a>
+    </div>
+
+    <div class="tour__pass-wrap reveal">
+      <div class="pass" id="boardingPass">
+        <div class="pass__top">
+          <div class="pass__row pass__row--meta"><span>Pase de transformación</span><span>LAS &middot; 403</span></div>
+          <div class="pass__route">
+            <span class="pass__code">TU</span>
+            <span class="pass__flight" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 00-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z" fill="currentColor" stroke="none"/></svg>
+            </span>
+            <span class="pass__code">BAQ</span>
+          </div>
+          <div class="pass__row pass__row--cities"><span>Tu ciudad</span><span>Barranquilla</span></div>
+          <div class="pass__grid">
+            <div><small>Pasajero</small><b>Tú</b></div>
+            <div><small>Destino</small><b>Quantum Tower</b></div>
+            <div><small>Clase</small><b>Bienestar</b></div>
+          </div>
+        </div>
+        <div class="pass__bottom">
+          <div class="pass__grid pass__grid--2">
+            <div><small>Puerta</small><b>Consultorio 403</b></div>
+            <div><small>Abordaje</small><b>Tu valoración</b></div>
+          </div>
+          <div class="pass__barcode" aria-hidden="true"></div>
+        </div>
+        <span class="pass__shine" aria-hidden="true"></span>
+      </div>
+      <p class="tour__caption">Tu transformación, en un destino que te cuida. Viaja con confianza para recibir atención quirúrgica de excelencia, combinando seguridad, resultados naturales y una experiencia diseñada para tu bienestar.</p>
+    </div>
+  </div>
+
+  <div class="tour__ticker" aria-hidden="true">
+    <div class="ticker__row">
+      <span>Transforma tu imagen.</span><i>&bull;</i><span>Fortalece tu confianza.</span><i>&bull;</i>
+      <span>Transforma tu imagen.</span><i>&bull;</i><span>Fortalece tu confianza.</span><i>&bull;</i>
+      <span>Transforma tu imagen.</span><i>&bull;</i><span>Fortalece tu confianza.</span><i>&bull;</i>
+      <span>Transforma tu imagen.</span><i>&bull;</i><span>Fortalece tu confianza.</span><i>&bull;</i>
+    </div>
+  </div>
+</section>
+
+<div class="scroll-progress" aria-hidden="true"><span id="scrollBar"></span></div>
+
 <script src="js/main.js"></script>
+<script src="js/sections.js"></script>
 </body>
 </html>
